@@ -1,0 +1,172 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    
+}
+
+h1, h2 {
+    font-size: 28px;
+    padding-top: 30px;
+    color:#0056b3;
+    margin-bottom: 15px;
+}
+
+header, main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Order summary section */
+#order-summary {
+    margin-bottom: 30px;
+}
+
+#order-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#order-summary th, #order-summary td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+#order-summary th {
+    background-color: #f0f0f0;
+}
+
+#order-summary p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* User details form */
+#user-details {
+    margin-top: 40px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    color: #0056b3;
+    font-size: 1.1em;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="month"], input[type="radio"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+#card-details {
+    display: none;
+    margin-top: 20px;
+}
+#card-details {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+}
+
+
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004094;
+}
+
+/* Confirmation message */
+#confirmation {
+    text-align: center;
+    background-color: #e7f7e7;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+#confirmation h2 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+#confirmation p {
+    font-size: 1.2em;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    h1{
+        padding-left: 15px;
+    }
+    main {
+        padding: 15px;
+    }
+
+    #order-summary table {
+        font-size: 14px;
+        
+    }
+
+    button {
+        padding: 12px 15px;
+    }
+
+    #user-details fieldset {
+        padding: 15px;
+    }
+}

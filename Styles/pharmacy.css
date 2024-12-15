@@ -1,0 +1,386 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+
+h1{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 28px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+
+}
+h1::after {
+    content: ''; 
+    display: block;
+    width:230px;/*e length of the underline */
+    height: 3px; 
+    background-color:#00796b; /* Set the color to green */
+    margin-top: 8px; 
+    border-radius: 2px; 
+    margin-right: auto; /* Align to the right */
+}
+h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 45px;
+    color: #333;
+    font-size: 16px}
+h2::after {
+    content: ''; 
+    display: block;
+    width: 80px; 
+    height: 3px; 
+    background-color: #00796b; 
+    margin: 0 auto; 
+    margin-top: 8px; 
+    border-radius: 2px; 
+}
+
+
+
+
+/* Medicine Categories */
+#medicine-categories {
+    width: 90%;
+    margin: 20px auto;
+}
+
+
+.category {
+    margin-bottom: 40px;
+}
+
+.category h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2d3e50;
+}
+
+.medicine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Medicine Items */
+.medicine-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.medicine-item:hover {
+    transform: translateY(-5px);
+}
+
+.medicine-item span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.medicine-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quantity-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.quantity-controls input {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.quantity-controls button:hover {
+    background-color: #0056b3;
+}
+
+/* General Styles for Cart Section */
+#cart {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+#cart h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+#cart tfoot {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 0;
+}
+
+#cart tfoot .total-price {
+    font-weight: normal;
+    color: #007bff; /* Highlight the price value */
+    margin-left: 5px;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+table th, table td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+table td {
+    color: #555;
+    font-size: 16px;
+}
+
+table td[colspan="4"] {
+    text-align: center;
+    color: #aaa;
+}
+.add-to-cart {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Add padding */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover Effect */
+.add-to-cart:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Disabled State */
+.add-to-cart:disabled {
+    background-color: #ccc; /* Gray background for disabled button */
+    cursor: not-allowed; /* Not-allowed cursor for disabled button */
+    box-shadow: none; /* Remove shadow for disabled button */
+}
+
+
+/* Cart Actions */
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.cart-actions button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.cart-actions button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cart-actions button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+#add-to-favorites, #apply-favorites, #buy-now {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text color */
+    border: none; /* Remove default borders */
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px 20px; /* Add padding for a larger clickable area */
+    font-size: 16px; /* Increase font size */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    margin: 10px; /* Add spacing between buttons */
+}
+
+/* Hover Effect */
+#add-to-favorites:hover, #apply-favorites:hover, #buy-now:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Disabled State */
+#add-to-favorites:disabled, #apply-favorites:disabled, #buy-now:disabled {
+    background-color: #ccc; /* Gray background for disabled buttons */
+    cursor: not-allowed; /* Show not-allowed cursor */
+    box-shadow: none; /* Remove shadow */
+}
+
+
+/* Responsive Design */
+/* Mobile Responsive Adjustments */
+@media (max-width: 600px){
+    body {
+        font-size: 24px;
+        line-height: 1.5;
+        
+    }
+    h2{
+        margin-top: auto;
+        margin-bottom: 20px
+    }
+
+    #medicine-categories {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .medicine-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .medicine-item {
+        padding: 10px;
+    }
+
+    .medicine-image {
+        height: 120px;
+    }
+
+    .quantity-controls button, .quantity-controls input {
+        font-size: 14px;
+        width: 25px;
+        
+    
+    }
+
+    #cart {
+        width: 95%;
+        font-size: 14px;
+    }
+    .medicine-item span{
+
+    font-size: 14px;
+    }
+    table{
+        margin-left: -15px;
+        
+    }
+    table th, table td {
+        padding: 6px;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    
+    .cart-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cart-actions button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    nav.navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        font-size: 18px;
+    }
+
+    #add-to-favorites, #apply-favorites, #buy-now {
+        width: 100%; /* Make buttons full width */
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Reduce font size */
+        
+    }
+
+    /* Ensure buttons are stacked vertically with spacing */
+    .cart-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Add space between buttons */
+    }
+    .add-to-cart {
+        width: 100%; /* Full width for smaller screens */
+        font-size: 14px; /* Slightly smaller font size */
+        padding: 10px; /* Adjust padding */
+    }
+
+
+}
+

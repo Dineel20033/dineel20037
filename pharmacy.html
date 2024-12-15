@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Ordering Page</title>
+    <link rel="stylesheet" href="./Styles/homepage.css">
+    <link rel="stylesheet" href="./Styles/header.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="./Styles/pharmacy.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <input type="checkbox" id="menu-toggle-checkbox" class="menu-checkbox">
+            <label for="menu-toggle-checkbox" class="menu-toggle">
+                <i class="fa fa-bars open-icon"></i>
+                <i class="fa fa-times close-icon"></i>
+                <span class="menu-text">Menu Button</span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About_us.html">About us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Doctors.html">Doctors</a></li>
+                <li><a href="Consulting_Reservation.html">Channeling</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+        <h1>Order Medicines</h1>
+    
+    <section id="medicine-categories">
+       
+    
+        <!-- Analgesics -->
+        <div class="category">
+            <h3>Analgesics</h3>
+            <div class="medicine-grid">
+                <div class="medicine-item">
+                    <span>Ibuprofen</span>
+                    <img src="./pharm-Images/lbuprofen.jpg" alt="Ibuprofen" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Ibuprofen" data-category="Analgesics" data-price="5">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Paracetamol</span>
+                    <img src="./pharm-Images/Paracetamol.jpg" alt="Paracetamol" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Paracetamol" data-category="Analgesics" data-price="3">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Aspirin</span>
+                    <img src="./pharm-Images/aspirin.webp" alt="Aspirin" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Aspirin" data-category="Analgesics" data-price="4">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Ketorolac</span>
+                    <img src="./pharm-Images/Ketorolac.jpg" alt="Ketorolac" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Ketorolac" data-category="Analgesics" data-price="6">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Naproxen</span>
+                    <img src="./pharm-Images/Naproxen.jpg" alt="Naproxen" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Naproxen" data-category="Analgesics" data-price="7">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Codeine</span>
+                    <img src="./pharm-Images/Codein.jpg" alt="Codeine" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Codeine" data-category="Analgesics" data-price="8">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Antibiotics -->
+        <div class="category">
+            <h3>Antibiotics</h3>
+            <div class="medicine-grid">
+                <div class="medicine-item">
+                    <span>Amoxicillin</span>
+                    <img src="./pharm-Images/Amoxicillin.jpg" alt="Amoxicillin" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Amoxicillin" data-category="Antibiotics" data-price="12">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Ciprofloxacin</span>
+                    <img src="./pharm-Images/Ciprofloxacin.png" alt="Ciprofloxacin" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Ciprofloxacin" data-category="Antibiotics" data-price="15">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Doxycycline</span>
+                    <img src="./pharm-Images/Doxycycline.png" alt="Doxycycline" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Doxycycline" data-category="Antibiotics" data-price="10">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Azithromycin</span>
+                    <img src="./pharm-Images/azithromycin.jpg" alt="Azithromycin" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Azithromycin" data-category="Antibiotics" data-price="18">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Clindamycin</span>
+                    <img src="./pharm-Images/Clindamycin.webp" alt="Clindamycin" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Clindamycin" data-category="Antibiotics" data-price="20">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Antidepressants -->
+        <div class="category">
+            <h3>Antidepressants</h3>
+            <div class="medicine-grid">
+                <div class="medicine-item">
+                    <span>Fluoxetine</span>
+                    <img src="./pharm-Images/fluoxetine.jpg" alt="Fluoxetine" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Fluoxetine" data-category="Antidepressants" data-price="25">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Sertraline</span>
+                    <img src="./pharm-Images/Sertraline.jpg" alt="Sertraline" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Sertraline" data-category="Antidepressants" data-price="20">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Paroxetine</span>
+                    <img src="./pharm-Images/Paroxetine.jpg" alt="Paroxetine" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Paroxetine" data-category="Antidepressants" data-price="22">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Citalopram</span>
+                    <img src="./pharm-Images/Citalopram.webp" alt="Citalopram" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Citalopram" data-category="Antidepressants" data-price="28">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Escitalopram</span>
+                    <img src="./pharm-Images/Escitalopram.jpeg" alt="Escitalopram" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Escitalopram" data-category="Antidepressants" data-price="30">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Amitriptyline</span>
+                    <img src="./pharm-Images/Amitriptyline.jpg" alt="Amitriptyline" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Amitriptyline" data-category="Antidepressants" data-price="35">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Antihistamines -->
+        <div class="category">
+            <h3>Antihistamines</h3>
+            <div class="medicine-grid">
+                <div class="medicine-item">
+                    <span>Loratadine</span>
+                    <img src="./pharm-Images/Lotaradine.webp" alt="Loratadine" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Loratadine" data-category="Antihistamines" data-price="5">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Diphenhydramine</span>
+                    <img src="./pharm-Images/diphenhydramine.png" alt="Diphenhydramine" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Diphenhydramine" data-category="Antihistamines" data-price="8">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Certizine</span>
+                    <img src="./pharm-Images/Certizine.webp" alt="Certizine" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Certizine" data-category="Antihistamines" data-price="6">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Fexofenadine</span>
+                    <img src="./pharm-Images/Fexofenadine.jpg" alt="Fexofenadine" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Fexofenadine" data-category="Antihistamines" data-price="7">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Antihypertensives -->
+        <div class="category">
+            <h3>Antihypertensives</h3>
+            <div class="medicine-grid">
+                <div class="medicine-item">
+                    <span>Amlodipine</span>
+                    <img src="./pharm-Images/Amlodipine.jpg" alt="Amlodipine" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Amlodipine" data-category="Antihypertensives" data-price="12">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Enalapril</span>
+                    <img src="./pharm-Images/Enalapril.jpg" alt="Enalapril" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Enalapril" data-category="Antihypertensives" data-price="15">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Losartan</span>
+                    <img src="./pharm-Images/Losartan.webp" alt="Losartan" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Losartan" data-category="Antihypertensives" data-price="18">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Hydrochlorothiazide</span>
+                    <img src="./pharm-Images/Hydrochlorothiazide.jpg" alt="Hydrochlorothiazide" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Hydrochlorothiazide" data-category="Antihypertensives" data-price="9">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Bisoprolol</span>
+                    <img src="./pharm-Images/Bisoprolol.webp" alt="Bisoprolol" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">                 
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Bisoprolol" data-category="Antihypertensives" data-price="13">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <span>Ramipril</span>
+                    <img src="./pharm-Images/Ramipril.jpeg" alt="Ramipril" class="medicine-image">
+                    <div class="quantity-controls">
+                        <button class="decrease-quantity">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" data-name="Ramipril" data-category="Antihypertensives" data-price="17">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    
+    
+    <section id="cart">
+        <h2>Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Medicine</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <tr>
+                    <td colspan="4">Your cart is empty.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" style="text-align: left; font-weight: bold;">
+                        Total Price: <span class="total-price">$0.00</span>
+                    </td>
+                    
+                </tr>
+            </tfoot>
+        </table>
+        <button id="add-to-favorites">Add to Favorites</button>
+        <button id="apply-favorites">Apply Favorites</button>
+        <button id="buy-now">Buy Now</button>
+    </section>
+    
+   
+    <script src="./pharmacy3.js"></script>
+
+
+
+    <section id="footer" class="footer-content">
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section contact-info">
+                    <h4>Contact Us</h4>
+                    <p >Email: dineel2003@gmail.com</p>
+                    <p >Phone: +94 71 740 5262</p>
+                    <p> Address: 55/2,Metro care,colombo.</p>
+                    
+                </div>
+        
+                <div class="footer-section social-media">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/dineel2003" aria-label="Facebook" class="social-icon facebook-icon"></a>
+                        <a href="https://twitter.com/@dineel2003" aria-label="Twitter" class="social-icon twitter-icon"></a>
+                        <a href="https://www.instagram.com/dineel2003" aria-label="Instagram" class="social-icon instagram-icon"></a>
+                        <a href="https://www.linkedin.com/in/anupa-dineel-a525a6326/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B78m%2FQlrqSu%2BwsPcbqlUBnw%3D%3D" aria-label="Linkedin" class="social-icon linkedin-icon"></a>
+                    </div>
+                </div>
+        
+                <div class="footer-section quick-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About_us.html">About Us</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Registration.html">Registration</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section legal-info">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <p>&copy; 2024 Metro Care Company Pvt Ltd. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+</body>  
+
+</html>

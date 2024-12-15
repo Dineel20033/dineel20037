@@ -1,0 +1,83 @@
+#doctors01 {
+    background-color: aliceblue; 
+    padding: 20px; 
+    margin: 0 auto; 
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.doctors01 h2 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 28px; 
+    margin-bottom: 20px;
+    color: #333; 
+    font-weight: 600; 
+    position: relative; 
+    display: inline-block; 
+    padding-bottom: 10px;
+}
+
+.doctors01 h2::after {
+    content: ''; 
+    display: block;
+    width: auto; 
+    height: 3px; 
+    background-color: #00796b; 
+    margin: 0 auto; 
+    margin-top: 8px; 
+    border-radius: 2px; 
+}
+
+#doctors01 header {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.doctors-grid {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+
+.doctor-item {
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    padding: 15px; 
+    text-align: center; 
+}
+
+.doctor_image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 50%; 
+    margin-bottom: 15px; 
+    margin-top: 10px;
+}
+
+/* Styling for Doctor's Name */
+.doctor-name {
+    font-size: 20px; 
+    font-weight: bold; 
+    margin: 10px 0; 
+    color: #00796b; 
+    text-transform: capitalize; /* Makes first letter capital if required */
+    margin-top: 20px;
+}
+
+.service-description {
+    font-size: 16px; 
+    color: #333; 
+    line-height: 1.6; 
+    text-align: left; 
+}
+
+/* Doctors Page Mobile version */
+@media (max-width: 768px) {
+    .doctors-grid {
+        grid-template-columns: 1fr; 
+    }
+}
