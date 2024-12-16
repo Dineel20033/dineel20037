@@ -112,7 +112,7 @@ h2::after {
 }
 
 .quantity-controls button {
-    background-color: #007bff;
+    background-color:#032346 ;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -197,7 +197,7 @@ table td[colspan="4"] {
     color: #aaa;
 }
 .add-to-cart {
-    background-color: #28a745; /* Green background */
+    background-color: #03360f; /* Green background */
     color: white; /* White text color */
     border: none; /* Remove default border */
     border-radius: 5px; /* Rounded corners */
